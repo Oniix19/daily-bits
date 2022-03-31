@@ -11,12 +11,12 @@ function App() {
   return (
     <StyleD>
       <div className="body">
-        {/* <Login /> */}
+        <Login />
         {/* <Home/> */}
         {/* <Estadisticas/> */}
         {/* <Perfil/> */}
         {/* <Navbar /> */}
-        <Questionario/>
+        {/* <Questionario/> */}
 
         {/* <AppRoutes/> */}
       </div>

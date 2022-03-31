@@ -1,8 +1,9 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { url } from '../helpers/UrlUsers'
-import { Google, Link } from "react-bootstrap-icons";
+import { Google } from "react-bootstrap-icons";
 import Home from '../components/Home';
+import { BrowserRouter, Router, Route } from 'react-router-dom';
 
 const Login = () => {
 
@@ -30,31 +31,30 @@ const Login = () => {
     }, [])
     console.log(data);
 
-    if(form === data.correo ){
-        <Home/>
-    }else{
-        <Login/>
+    if (form === data.correo) {
+        <Home />
+    } else {
+        <Login />
     }
 
 
     return (
-        
         <div className='login'>
-            
             <img className='LoginImg' src="https://res.cloudinary.com/dsu0m4sa2/image/upload/v1648523965/Daily-base/images/Color_Purple_Container_Yes_mrp9lw.png" />
 
             <h1 className='loginH1'>Iniciar Sesión</h1>
             <button className='loginBtnG'>
                 <Google /><span> Continuar con Google</span>
-            </button> {/* añadir el logo de google */}
+            </button>
             <div className='loginDiv'>
                 <label className='loginLabel'>Correo electrónico</label>
                 <input id='correo' className='loginInput' placeholder='Ingrese su correo electrónico' />
-
-                <a className='loginRest'>¿Se te olvido tu contraseña?</a> {/* Validar el funcionamiento del link y remplazar la <a> */}
-                <p>¿Aún no tienes una cuenta? <a className='loginReg'>Inscribirse</a></p>
+                <a className='loginRest'>¿Se te olvido tu contraseña?</a>
+                <p>¿Aún no tienes una cuenta?
+                    <Link className='loginReg' to=''>Inscribirse</Link>
+                </p>
             </div>
-        </div>
+        </div >
     )
 }
 

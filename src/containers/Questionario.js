@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { questions } from '../helpers/Questions'
+import { Input } from '../styles/StyleD'
 
 export default class Questionario extends Component {
     constructor() {
@@ -28,7 +29,6 @@ export default class Questionario extends Component {
                 a: currentQuizData.a,
                 b: currentQuizData.b,
                 c: currentQuizData.c,
-                d: currentQuizData.d,
                 correct: currentQuizData.correct
             }
         })
@@ -58,6 +58,8 @@ export default class Questionario extends Component {
     render() {
         return (
             <div className='questionario'>
+                {/* <progress max="100" value=""></progress> */}
+
                 <div className='question'>
                     <img className='quesImg' src='https://res.cloudinary.com/dsu0m4sa2/image/upload/v1648523969/Daily-base/images/Property_1_4_ko2keo.png' />
 
@@ -66,7 +68,7 @@ export default class Questionario extends Component {
 
                 <form className='quesForm'>
                     <div className='quesDiv'>
-                        <input className='quesDivResp'
+                        <Input className='quesDivResp'
                             type="radio"
                             label={this.state.question.a}
                             value={this.state.question.a}
@@ -74,7 +76,7 @@ export default class Questionario extends Component {
                             id={`respuesta1`}
                             onChange={this.onChanged}
                         />
-                        <input className='quesDivResp'
+                        <Input className='quesDivResp'
                             type="radio"
                             label={this.state.question.b}
                             value={this.state.question.b}
@@ -82,25 +84,17 @@ export default class Questionario extends Component {
                             id={`respuesta2`}
                             onChange={this.onChanged}
                         />
-                        <input className='quesDivResp'
-                            type="radio"
+                        <Input className='quesDivResp'
+                            
                             label={this.state.question.c}
                             value={this.state.question.c}
                             name={'respuestas'}
                             id={`respuesta3`}
                             onChange={this.onChanged}
-                        />
-                        <input className='quesDivResp'
                             type="radio"
-                            label={this.state.question.d}
-                            value={this.state.question.d}
-                            name={'respuestas'}
-                            id={`respuesta4`}
-                            onChange={this.onChanged}
                         />
                     </div>
                     <button className='quesBtn' type='submit' onClick={() => { this.setState({ numberQuestion: this.state.numberQuestion + 1 }) }}>VALIDAR</button>
-                    <h2>{this.state.score}/{questions.length}</h2>
                 </form>
             </div>
         )

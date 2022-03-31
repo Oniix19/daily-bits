@@ -1,3 +1,4 @@
+import { Form, Button } from 'react-bootstrap'
 import styled from "styled-components"
 
 export const StyleD = styled.body` 
@@ -202,32 +203,29 @@ export const StyleD = styled.body`
 
 
     .questionario{
-        background-color: aqua;
+        /* background-color: aqua; */
         height: 100%;
     }
     .question{
         display: flex;
-        align-items: center;
-        
+        align-items: center;   
     }
     .quesImg{
         width: 30%;
         margin: 0 5%;
     }
-
     .quesForm{
-        background-color: green;
+        margin:5%;
     }
     .quesDiv{
-        background-color: greenyellow;
-    }
-    .quesH1{
-        background-color: blue;
+        margin:5%;
     }
     .quesDivResp{
-        background-color: blueviolet;
-        height:50px;
-        border: solid grey 5px;
+        height: 30px;
+        margin: 3% 0;
+        border: solid white;
+        border-radius: 5px;
+        align-items: center;
     }
     .quesBtn{
         background-color: #7F5AF0;
@@ -239,13 +237,6 @@ export const StyleD = styled.body`
         color:  white;
         font-family: roboto;
         font-size: 15px;
-        /* &:hover{
-        background-color: #732d91;
-        }
-        &:focus{
-        outline: none;
-        background-color: #5e3370;
-        } */
     }
 
     
@@ -258,3 +249,8 @@ export const StyleD = styled.body`
 // green #2CB67D
 // gris oscuro #72757E
 // morado #7F5AF0
+
+export const Input = styled(Form.Check)`
+    padding: 0;
+    margin: 0 5%;
+`
