@@ -241,6 +241,37 @@ export const StyleD = styled.body`
 
     
 
+
+    .formulario{
+        max-height: 564px;
+        height: 564px;
+        text-align: center;        
+    }
+    .formInput{
+        margin: 2% 5%;
+        width: 87%;
+        height: 8%;
+        font-size: 120%;
+        font-family: roboto;
+        border-radius: 5px;
+    }
+    .formH3{
+        margin: 5%;
+        padding-top: 5%;
+    }
+    .formBtn{
+        background-color: #7F5AF0;
+        width:90%;
+        height: 8%;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 120%;
+        font-family: roboto;
+        margin: 5% 0;
+    }
+
+
 `
 
 // silver #94A1B2

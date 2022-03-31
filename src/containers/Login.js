@@ -51,7 +51,7 @@ const Login = () => {
                 <input id='correo' className='loginInput' placeholder='Ingrese su correo electrónico' />
                 <a className='loginRest'>¿Se te olvido tu contraseña?</a>
                 <p>¿Aún no tienes una cuenta?
-                    <Link className='loginReg' to=''>Inscribirse</Link>
+                    <a className='loginReg' to=''>Inscribirse</a>
                 </p>
             </div>
         </div >

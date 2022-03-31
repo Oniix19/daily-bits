@@ -6,6 +6,7 @@ import Perfil from "../components/Perfil";
 import Navbar from "../components/Navbar";
 import AppRoutes from "../routes/AppRoutes";
 import Questionario from "./Questionario";
+import Formulario from "../components/Formulario";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         {/* <Perfil/> */}
         {/* <Navbar /> */}
         {/* <Questionario/> */}
-
+        {/* <Formulario/> */}
         {/* <AppRoutes/> */}
       </div>
     </StyleD>
