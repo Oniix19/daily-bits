@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { PersonCircle, XCircle, XCircleFill } from "react-bootstrap-icons"
+import Navbar from './Navbar'
 
 const Perfil = () => {
   return (
@@ -22,7 +23,7 @@ const Perfil = () => {
           <h4 className='perfLogOut'>Cerrar sesión</h4>
         </Link>
       </div>
-
+      <Navbar />
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Clock, Chat, XCircle } from "react-bootstrap-icons";
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const Estadisticas = () => {
   return (
@@ -37,6 +38,7 @@ const Estadisticas = () => {
         <p><Chat className='estImg' />Respuestas incorrectas</p>
         <p className='estResp4'>20</p>
       </div>
+      <Navbar />
     </div>
   )
 }
