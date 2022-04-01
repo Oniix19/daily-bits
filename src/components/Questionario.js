@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { XCircle } from 'react-bootstrap-icons'
+import { Link } from 'react-router-dom'
 import { questions } from '../helpers/Questions'
 import { Input } from '../styles/StyleD'
 
@@ -58,14 +60,15 @@ export default class Questionario extends Component {
     render() {
         return (
             <div className='questionario'>
-                {/* <progress max="100" value=""></progress> */}
-
+                <Link to="/home">
+                    <button className="btnClose">
+                        <XCircle className='XCircle' />
+                    </button>
+                </Link>
                 <div className='question'>
                     <img className='quesImg' src='https://res.cloudinary.com/dsu0m4sa2/image/upload/v1648523969/Daily-base/images/Property_1_4_ko2keo.png' />
-
                     <h3 className='quesH1'>{this.state.question.question}</h3>
                 </div>
-
                 <form className='quesForm'>
                     <div className='quesDiv'>
                         <Input className='quesDivResp'
@@ -85,7 +88,7 @@ export default class Questionario extends Component {
                             onChange={this.onChanged}
                         />
                         <Input className='quesDivResp'
-                            
+
                             label={this.state.question.c}
                             value={this.state.question.c}
                             name={'respuestas'}

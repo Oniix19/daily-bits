@@ -1,5 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import { XCircle } from 'react-bootstrap-icons'
+import { Link } from 'react-router-dom'
 import { url } from '../helpers/UrlUsers'
 
 const Formulario = () => {
@@ -46,11 +48,13 @@ const Formulario = () => {
       alert("registro cargado")
     }
   }
-
-
-
   return (
     <div>
+      <Link to="/">
+        <button className="btnClose">
+          <XCircle className='XCircle' />
+        </button>
+      </Link>
       <form className='formulario' onSubmit={handleSubmit}>
         <h3 className='formH3'>Debes estar registrado para poder realizar la prueba, por favor registrate...</h3>
         <label>Nombre:</label>

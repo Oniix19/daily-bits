@@ -89,6 +89,26 @@ export const StyleD = styled.body`
     .loginReg{
         color: #2CB67D;
     }
+    .loginForm{
+        width: 98%;
+        height: 20%;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 120%;
+        font-family: roboto;
+        margin: 5% 0;
+    }
+    .loginBtn{
+        background-color: #7F5AF0;
+        width: 100%;
+        height: 20%;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 120%;
+        font-family: roboto;
+    }
 
 
 
@@ -154,8 +174,8 @@ export const StyleD = styled.body`
         text-align: center;
     }
     .perfImg{
+        font-size: 70px;
         margin: 5% 37.5%;
-        width:25%;
         border-radius: 20px;
     }   
     .perfH4{
@@ -170,7 +190,7 @@ export const StyleD = styled.body`
 
     .home{
         max-height: 564px;
-        height: 564px;
+        height: 600px;
     }
     .homeH3{
         text-align: center;
@@ -271,6 +291,19 @@ export const StyleD = styled.body`
         margin: 5% 0;
     }
 
+    .XCircle{
+        color: white;
+        font-size: 20px;
+    }
+    .btnClose{
+        border: none;
+        background-color: transparent;
+    }
+    .Div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 `
 
